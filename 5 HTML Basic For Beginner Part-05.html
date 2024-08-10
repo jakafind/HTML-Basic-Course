@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JakaFind</title>
+    <link href="image/jakafind-icon.png" rel="icon">
+    <link href="style.css" rel="Stylesheet">
+</head>
+<body>
+<h1>JakaFind</h1>
+<h2>Course & Resource Service Company</h2>
+
+<h3>HTML Video Media With Autoplay</h3>
+
+<div class="videomedia">
+
+<video width="800" height="450" autoplay muted>
+    <source src="video/jakariaa-ads.mp4" type="video/mp4">
+  </video>
+</div>
+
+<h3>HTML Video Media With Control</h3>s
+
+<div class="videomedia">
+
+<video width="800" height="450" controls>
+    <source src="video/jakariaa-ads.mp4" type="video/mp4">
+  </video>
+</div>
+
+<h3>HTML Video Media With JavaScript</h3>
+
+<div class="videomedia"> 
+
+    
+
+    <video id="video1" width="800" controls>
+      <source src="video/jakariaa-ads.mp4" type="video/mp4">
+    </video>
+    <br><br>
+    <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+
+  </div> 
+  
+  <script> 
+  var myVideo = document.getElementById("video1"); 
+  
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  
+  function makeBig() { 
+      myVideo.width = 1000;
+  } 
+  
+  function makeSmall() { 
+      myVideo.width = 600; 
+  } 
+  
+  function makeNormal() { 
+      myVideo.width = 800; 
+  } 
+  </script> 
+
+</div>
+
+<h3>HTML Media With YouTube</h3>
+
+<div class="videomedia">
+
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/fjpse6ez4cg" allowfullscreen></iframe>
+
+</div>
+
+<h3>HTML Audio Media With Control</h3>s
+
+<div class="videomedia">
+
+    <audio controls>
+        <source src="audio/jakariaa-ads.mp3" type="audio/mp3">
+      </audio>
+</div>
+
+<h3>HTML Plug-in With Inner Page</h3>
+
+<div class="videomedia">
+
+    <object width="800" height="400px" data="simple.html"></object>
+
+</div>
+
+<h3>HTML Plug-in With Media</h3>
+
+<div class="videomedia">
+
+    <object width="800" height="400px" data="image/jakafast.jpg"></object>
+
+</div>
+
+<p>.</p>  
+<hr/>
+<p style="padding: 200px;">.</p>
+<img id="image" src="image/jakafind.jpg" alt="image">
+</body>
+</html>
